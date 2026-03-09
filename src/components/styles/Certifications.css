@@ -1,0 +1,76 @@
+.certifications-section {
+  margin: 90px auto;
+}
+
+.certifications-section h2 {
+  font-size: 62px;
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+.certifications-section h2 span {
+  color: var(--accentColor);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cert-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border-radius: 14px;
+  padding: 24px;
+  text-decoration: none;
+  color: #ececf4;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.cert-card:hover {
+  border-color: var(--accentColor);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(20, 184, 166, 0.18);
+}
+
+.cert-card-title {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.cert-card-link {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--accentColor);
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .certifications-section h2 {
+    font-size: 50px;
+  }
+
+  .cert-card-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .certifications-section {
+    margin: 60px auto;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
